@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="3.0" style="-fx-background-color: #FDF3FA;" vgap="3.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label fx:id="idUser" prefWidth="200.0" text="Nombre de usuario:" GridPane.rowIndex="0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="5.0" top="20.0" />
+         </GridPane.margin></Label>
+      <Label fx:id="idPassword" prefWidth="200.0" text="Contraseña:" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <TextField fx:id="idTFlUser" prefWidth="200.0" promptText="usuario@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="0">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <PasswordField fx:id="idTFPassword" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" top="5.0" />
+         </GridPane.margin>
+      </PasswordField>
+      <Label fx:id="idShowPassword" onMouseMoved="#showPassword" prefWidth="200.0" text="Mostrar contraseña" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="idButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#pressButton" prefWidth="200.0" style="-fx-background-color: #D89DF6; -fx-border-color: #FB87CB; -fx-border-width: 2; -fx-border-radius: 3;" text="Guardar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="20.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</GridPane>
