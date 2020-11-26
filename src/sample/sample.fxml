@@ -36,19 +36,19 @@
             <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
          </GridPane.margin>
       </TextField>
-      <PasswordField fx:id="idTFPassword" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <PasswordField fx:id="idTFPassword" onKeyTyped="#onKeyPressed" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets left="20.0" right="20.0" top="5.0" />
          </GridPane.margin>
       </PasswordField>
-      <Label fx:id="idShowPassword" onMouseMoved="#showPassword" prefWidth="200.0" text="Mostrar contraseña" GridPane.rowIndex="2">
+      <Label fx:id="idShowPassword" onMouseEntered="#showPassword" onMouseExited="#onClickedMouseShowPassword" prefWidth="200.0" text="Mostrar contraseña" GridPane.rowIndex="2">
          <GridPane.margin>
             <Insets bottom="20.0" left="20.0" right="20.0" />
          </GridPane.margin>
          <font>
             <Font name="System Italic" size="12.0" />
          </font></Label>
-      <Button fx:id="idButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#pressButton" prefWidth="200.0" style="-fx-background-color: #D89DF6; -fx-border-color: #FB87CB; -fx-border-width: 2; -fx-border-radius: 3;" text="Guardar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <Button fx:id="idButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#pressButton" onMouseExited="#soltarButton" prefWidth="200.0" style="-fx-background-color: #D89DF6; -fx-border-color: #FB87CB; -fx-border-width: 2; -fx-border-radius: 3;" text="Guardar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets bottom="10.0" left="20.0" />
          </GridPane.margin>
